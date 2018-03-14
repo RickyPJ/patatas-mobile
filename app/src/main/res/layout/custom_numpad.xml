@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/numpad"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal" >
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn1"
+        android:layout_margin="2dp"
+        android:text="@string/num_1" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn2"
+        android:layout_margin="2dp"
+        android:text="@string/num_2" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn3"
+        android:layout_margin="2dp"
+        android:text="@string/num_3" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn4"
+        android:layout_margin="2dp"
+        android:text="@string/num_4" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn5"
+        android:layout_margin="2dp"
+        android:text="@string/num_5" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn6"
+        android:layout_margin="2dp"
+        android:text="@string/num_6" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn7"
+        android:layout_margin="2dp"
+        android:text="@string/num_7" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn8"
+        android:layout_margin="2dp"
+        android:text="@string/num_8" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn9"
+        android:layout_margin="2dp"
+        android:text="@string/num_9" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnX"
+        android:layout_margin="2dp"
+        android:text="@string/num_x" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn0"
+        android:layout_margin="2dp"
+        android:text="@string/num_0" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnR"
+        android:layout_margin="2dp"
+        android:text="@string/num_r" />
+
+</GridLayout>

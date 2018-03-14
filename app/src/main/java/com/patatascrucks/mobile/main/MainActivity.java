@@ -1,5 +1,6 @@
-package com.patatascrucks.patatasmobile;
+package com.patatascrucks.mobile.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.patatascrucks.mobile.R;
+import com.patatascrucks.mobile.model.Charge;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -78,21 +82,50 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Intent intent;
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        switch (id) {
+            case R.id.nav_bill:
+                intent = new Intent(this, com.patatascrucks.mobile.model.Transaction.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.bill));
+                startActivity(intent);
+                return true;
+            case R.id.nav_note:
+                intent = new Intent(this, com.patatascrucks.mobile.model.Transaction.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.note));
+                startActivity(intent);
+                return true;
+            case R.id.nav_charge:
+                intent = new Intent(this, Charge.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.charge));
+                startActivity(intent);
+                return true;
+            case R.id.nav_dispatch:
+                intent = new Intent(this, com.patatascrucks.mobile.model.Transaction.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.dispatch));
+                startActivity(intent);
+                return true;
+            case R.id.nav_return:
+                intent = new Intent(this, com.patatascrucks.mobile.model.Transaction.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.returns));
+                startActivity(intent);
+                return true;
+            case R.id.nav_change:
+                intent = new Intent(this, com.patatascrucks.mobile.model.Transaction.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.change));
+                startActivity(intent);
+                return true;
+            case R.id.nav_gift:
+                intent = new Intent(this, com.patatascrucks.mobile.model.Transaction.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.gift));
+                startActivity(intent);
+                return true;
+            case R.id.nav_diary:
+                intent = new Intent(this, com.patatascrucks.mobile.reports.Diary.class);
+                intent.putExtra(getResources().getString(R.string.app_name), getResources().getString(R.string.diary));
+                startActivity(intent);
+                return true;
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

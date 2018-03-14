@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.patatascrucks.patatasmobile">
+    package="com.patatascrucks.mobile">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.patatascrucks.mobile.main.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -18,6 +20,87 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".model.Transaction"
+            android:label="@string/title_activity_transaction"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.patatascrucks.mobile.model.Transaction" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patatascrucks.mobile.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patatascrucks.mobile.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".reports.Diary"
+            android:label="@string/title_activity_diary"
+            android:parentActivityName=".main.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patatascrucks.mobile.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".model.Charge"
+            android:label="@string/title_activity_charge"
+            android:parentActivityName=".main.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patatascrucks.mobile.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".model.Client"
+            android:label="@string/title_activity_client"
+            android:parentActivityName=".model.Transaction"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patatascrucks.mobile.model.Transaction" />
+        </activity>
+        <activity
+            android:name=".settings.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patatascrucks.mobile.main.MainActivity" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!--<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />-->
+
+        <activity
+            android:name=".model.Map"
+            android:label="@string/title_activity_map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patatascrucks.mobile.main.MainActivity" />
         </activity>
     </application>
 

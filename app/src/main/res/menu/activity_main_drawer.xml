@@ -3,35 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
-
-    <item android:title="Communicate">
+    <item android:title="@string/sales">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_bill"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="@string/bill" />
+            <item
+                android:id="@+id/nav_note"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/note" />
+            <item
+                android:id="@+id/nav_charge"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/charge" />
+        </menu>
+    </item>
+
+    <item android:title="@string/inventory">
+        <menu>
+            <item
+                android:id="@+id/nav_dispatch"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/dispatch" />
+            <item
+                android:id="@+id/nav_return"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/returns" />
+            <item
+                android:id="@+id/nav_change"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/change" />
+            <item
+                android:id="@+id/nav_gift"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/gift" />
+        </menu>
+    </item>
+
+    <item android:title="@string/reports">
+        <menu>
+            <item
+                android:id="@+id/nav_diary"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/diary" />
         </menu>
     </item>
 

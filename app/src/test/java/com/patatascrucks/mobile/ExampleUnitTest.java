@@ -1,4 +1,4 @@
-package com.patatascrucks.patatasmobile;
+package com.patatascrucks.mobile;
 
 import org.junit.Test;
 

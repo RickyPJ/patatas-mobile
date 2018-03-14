@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transaction_list_item"
+    android:background="@drawable/list_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/txtUnits"
+        android:gravity="center|end"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:layout_margin="4dp"
+        style="@style/TextAppearance.AppCompat.Small" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:layout_margin="4dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblGroup"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/lblDescription"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Small" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblUnitPrice"
+        android:gravity="center|end"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_margin="4dp"
+        style="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/lblProduct"
+        android:gravity="center|end"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:layout_margin="4dp"
+        style="@style/TextAppearance.AppCompat.Small" />
+
+</LinearLayout>

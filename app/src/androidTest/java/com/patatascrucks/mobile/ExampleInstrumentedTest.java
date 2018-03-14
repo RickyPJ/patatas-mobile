@@ -1,4 +1,4 @@
-package com.patatascrucks.patatasmobile;
+package com.patatascrucks.mobile;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.patatascrucks.patatasmobile", appContext.getPackageName());
+        assertEquals("com.patatascrucks.mobile", appContext.getPackageName());
     }
 }
